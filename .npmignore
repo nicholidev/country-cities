@@ -1,0 +1,5 @@
+index.ts
+jest.config.js
+node_modules
+__test__
+coverage
