@@ -4,15 +4,16 @@ import { IState } from './interface';
 
 const all = (): IState[] => {
 	return stateList;
-}
+};
 
 const getByCountry = (countryCode: string = ''): IState[] => {
 	if (!countryCode) return [];
+
 	const states = stateList.filter((value) => {
 		return value.countryCode === countryCode;
 	});
 	return states.sort(compare);
-}
+};
 
 export function getByCode(stateCode: string, countryCode: string): IState | undefined {
 	if (!stateCode) return undefined;
@@ -20,7 +21,6 @@ export function getByCode(stateCode: string, countryCode: string): IState | unde
 
 	return findStateByCodeAndCountryCode(stateList, stateCode, countryCode);
 }
-
 
 export default {
 	all,

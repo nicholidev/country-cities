@@ -4,25 +4,31 @@ import { ICity } from './interface';
 
 const all = () => {
 	return cityList;
-}
+};
 
 const getByState = (stateCode: string, countryCode: string): ICity[] => {
 	if (!stateCode) return [];
 	if (!countryCode) return [];
+	// @ts-ignore
+	let cities: ICity[] = cityList || [];
 
-	const cities = cityList.filter((value: { countryCode: string; stateCode: string }) => {
+	cities = cities.filter((value: { countryCode: string; stateCode: string }) => {
 		return value.countryCode === countryCode && value.stateCode === stateCode;
 	});
 
 	return cities.sort(compare);
-}
+};
 
 function getByCountry(countryCode: string): ICity[] | undefined {
 	if (!countryCode) return [];
 
-	const cities = cityList.filter((value: { countryCode: string }) => {
+	// @ts-ignore
+	let cities: ICity[] = cityList || [];
+
+	cities = cities.filter((value: { countryCode: string }) => {
 		return value.countryCode === countryCode;
 	});
+
 	return cities.sort(compare);
 }
 
