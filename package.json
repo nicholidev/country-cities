@@ -1,6 +1,6 @@
 {
   "name": "country-cities",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Countries, States, Cities Library",
   "main": "./lib/cjs/index.js",
   "module": "./lib/index.js",
