@@ -33,6 +33,7 @@
     "latitude",
     "longitude",
     "iso",
+    "typescript",
     "phoneCode"
   ],
   "bugs": {
