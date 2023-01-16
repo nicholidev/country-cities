@@ -1,6 +1,6 @@
 {
   "name": "country-cities",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "Countries, States, Cities Library",
   "main": "./lib/cjs/index.js",
   "module": "./lib/index.js",
@@ -39,7 +39,7 @@
   "bugs": {
     "url": "https://github.com/nicholidev/country-cities/issues"
   },
-  "homepage": "https://github.com/nicholidev/country-cities#readme",
+  "homepage": "https://nicholidev.github.io/country-cities-doc/",
   "dependencies": {},
   "devDependencies": {
     "ts-node": "^10.7.0",
